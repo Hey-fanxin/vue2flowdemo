@@ -55,8 +55,10 @@ export const themeApprove = {
     stroke: '#3CB371'
   },
   circle: {
+    width: 52,
+    height: 52,
     radius: 4,
-    r: 20,
+    r: 24,
     stroke: '#FF6347'
   },
   polygon: {

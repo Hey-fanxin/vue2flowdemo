@@ -77,14 +77,23 @@ export default function RegisteNode(lf) {
         y,
         width,
         height,
-        stroke
+        stroke,
+        r,
+        radius
       } = this.props.model;
       // const style = this.props.model.getNodeStyle();
-      return h(
-        'g',
-        {
-        },
+      return h('g', {},
         [
+          h("circle", {
+            r: r,
+            x,
+            y,
+            cx: x,
+            cy: y,
+            stroke: '#fff',
+            fill: '#fff',
+            radius,
+          }),
           h(
             'svg',
             {
@@ -92,7 +101,7 @@ export default function RegisteNode(lf) {
               y: y - height / 2,
               width,
               height,
-              viewBox: "0 0 1024 1024",
+              viewBox: "100 140 768 768",
             },
             [
               h('path', {
