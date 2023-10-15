@@ -1,16 +1,18 @@
 <template>
   <div id="app">
-    <FlowTool />
+    <!-- <FlowTool /> -->
+    <FlowView />
   </div>
 </template>
 
 <script>
-import FlowTool from './components/FlowTool'
-
+// import FlowTool from './components/FlowTool'
+import FlowView from './components/FlowView'
 export default {
   name: 'App',
   components: {
-    FlowTool
+    // FlowTool,
+    FlowView
   }
 }
 </script>
